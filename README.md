@@ -1,2 +1,1 @@
-# My-repo
-Tryin this out
+FIguring out Github
