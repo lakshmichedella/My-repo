@@ -5,44 +5,44 @@
 
 
 
-.nav-item .nav-link {
+nav .nav-item .nav-link {
         color: rgb(205, 13, 93);
         text-decoration: none;
 }
 
 
-.nav-item {
+nav .nav-item {
         background-color:  transparent;
         transition: 0.1s linear;
         margin: 0px;
         border-radius: 10px;
 }
 
-.nav-item:hover {
+nav .nav-item:hover {
         background-color:  rgb(205, 13, 93) ;
         transition: all 0.2s linear;
 }
 
-.nav-item:hover .nav-link{
+nav .nav-item:hover .nav-link{
         color: white;
         transition: 0.2s linear;
 }
 
-.nav .btn-default {
+nav .nav .btn-default {
         
         color: rgb(205, 13, 93);
         border: 2px solid rgb(205, 13, 93);
         transition: all 0.1s linear;
 }
 
-.nav .btn-default:hover, .nav .btn-default:active:focus{
+nav .nav .btn-default:hover, .nav .btn-default:active:focus{
         background-color:  rgb(205, 13, 93);
         color: white;
         border: 2px solid rgb(205, 13, 93);
         transition: all 0.2s linear;
 }
 
-.nav .form-control {
+nav .nav .form-control {
         box-shadow: none;
 }
 
@@ -66,7 +66,7 @@
 .welcome {
         font-size: 10vmin;
         text-shadow: 3px 3px 3px rgb(181, 179, 179);
-        animation: welcome_move 1.5s -0.5s ease forwards;
+        animation: welcome_move 1.5s -0.2s ease forwards;
 
 }
 
@@ -74,4 +74,59 @@
         font-size: 4vmin;
         text-shadow: 2px 2px 2px rgb(224, 223, 223);
         animation: welcome_move 1.5s ease forwards;
+}
+
+
+.portrait {
+        width: 45%;
+        height: 100vh;
+        
+        background-color: rgb(46, 46, 46);
+        border-radius: 50% 0px 0px 50%;
+}
+
+.About-Me-card {
+        /*box-shadow: 5px 5px 5px rgba(135, 43, 81, 0.613);*/
+        
+ border-radius: 5px;
+        
+ box-shadow: 5px 5px 5px rgba(135, 43, 81, 0.613);
+        height: fit-content;
+        
+        align-self: start;
+}
+
+
+.About-Me-header {
+        background-color: rgb(254, 220, 229);
+        border: 3px solid pink;
+        border-radius: 5px 5px 0 0;
+}
+
+.About-me-words {
+        background-color: rgb(244, 244, 244);
+        border: 3px solid rgb(232, 231, 231);
+        border-top: 0;
+        border-radius: 0 0 5px 5px;
+}
+
+
+footer {
+        background-color: rgb(233, 97, 154);
+        border-top: 3px solid pink;
+}
+
+footer h3{
+        color: white;
+
+}
+
+footer ul .nav-link {
+        text-decoration: none;
+        color: white;
+}
+
+footer ul .nav-link:hover {
+        
+        color: black;
 }
