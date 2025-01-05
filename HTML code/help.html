@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Twitter website mockup" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="puzzle.js" async></script>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!--A menubar-->
+      <div class="row py-3">
+        <div class="col-6 col-md-8">
+          <div
+            id="inside"
+            class="d-flex flex-column flex-sm-row align-items-center justify-content-center text-center"
+          >
+            <a href="index.html"
+              ><img
+                src="images/blue.jpg"
+                alt="HHM ROV Logo"
+                class="website_photo"
+                title="HHM Robotics Team"
+            /></a>
+            <a
+              href="index.html"
+              id="company"
+              class="link-underline link-underline-opacity-0"
+              ><h1 class="fs-2">HHM ROV</h1></a
+            >
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <form class="d-flex flex-column flex-sm-row mt-4" role="search">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <nav
+          id="menubar_holder"
+          class="navbar navbar-expand-sm bg-body-tertiary"
+        >
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler mx-auto mb-1"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav nav-fill w-100">
+                <a href="about.html" target="_self" class="nav-link">About</a>
+                <a href="members.html" target="_self" class="nav-link"
+                  >Members</a
+                >
+                <a href="#" target="_self" class="nav-link">This year</a>
+                <a href="#" target="_self" class="nav-link">Previous year</a>
+                <a href="contact.html" target="_self" class="nav-link"
+                  >Contact Us!</a
+                >
+                <a href="#" target="_self" class="nav-link">Help Us</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <br /><br /><br />
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div id="puzzle_container">
+            <div id="one" class="puzzle-piece">1</div>
+            <div id="2" class="puzzle-piece">2</div>
+            <div id="3" class="puzzle-piece">3</div>
+            <div id="4" class="puzzle-piece">4</div>
+            <div id="one" class="puzzle-piece-box">1</div>
+            <div id="2" class="puzzle-piece-box">2</div>
+            <div id="3" class="puzzle-piece-box">3</div>
+            <div id="4" class="puzzle-piece-box">4</div>
+          </div>
+        </div>
+        <div class="col">
+          <button id="restart">Restart</button>
+          <p id="coor"></p>
+          <p id="points"></p>
+          <p id="win"></p>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br />
+    <div id="boxes">
+      <div id="stationary">Drop here</div>
+      <br /><br />
+      <div class="move"><p>Hello</p></div>
+      <div class="move"><p>Hi</p></div>
+      <div class="move"><p>Good morning</p></div>
+    </div>
+  </body>
+</html>

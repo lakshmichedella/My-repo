@@ -1,0 +1,119 @@
+#rov-words {
+        background-color: lightblue;
+        height: 200px;
+        /*mask-image: linear-gradient(to bottom, black calc(100% - 48px), transparent 100%);*/
+}
+
+#website_photo {
+        height: 100px;
+        width: 100px;
+        opacity: 0.9;
+        transition: opacity 0.4s;
+}
+
+#website_photo:hover {
+        opacity: 1;
+}
+
+#scroll-per{
+        position: fixed;
+        z-index: 100;
+        background-color: cornflowerblue;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        scale: 0 1;
+        animation: scroll-per linear;
+        animation-timeline: scroll();
+        transform-origin: left;
+        height: 10px;
+}
+
+@keyframes scroll-per {
+        to {scale: 1 1;}
+}
+
+@keyframes moveleft {
+        0% {
+                transform: translateX(-300px);
+                opacity: 0;
+        } 50% {
+                transform: translateX(0);
+                opacity: 1;
+        }
+}
+
+@keyframes appear {
+        0% {
+                transform: scale(0.9);
+                
+        }
+        50% {
+                
+                box-shadow: 0px 0px 10px white;
+        }
+       
+        100%{
+                transform: scale(1);
+                box-shadow: 0px 0px 10px black;
+        }
+}
+
+#title-rov {
+        transform: translateX(-300px);
+        animation: moveleft 3s ease;
+        transform: translateX(0px);
+        animation-timeline: view();
+        animation-range-start: entry;
+        
+}
+
+.btn.btn-primary {
+        transition: all 0.5s;
+}
+
+.btn.btn-primary:hover {
+        transform: translateY(-10px);
+        background-color: white;
+        color: blue;
+       
+}
+
+
+#blue {
+        position: relative;
+        transform-style: preserve-3d;
+        animation: appear 1s forwards;
+        cursor:url('images/blue.jpg');
+        max-height: 400px;
+        width: 100%;
+        border-radius: 40px;
+}
+
+.carousel-item img{
+        border-radius: 40px;
+}
+
+.nav-link {
+        background-color: rgb(33, 123, 225);
+        color: white;
+        transition: background-color 0.2s, color 0.2s;}
+
+
+.nav-link:hover {
+        background-color: white;
+        color:  rgb(33, 123, 225);
+}
+
+
+.navbar {
+        background-color:  rgb(33, 123, 225);
+}
+
+.navbar-toggler{
+        color: white;
+}
+
+#main {
+        height: 50rem;
+}
