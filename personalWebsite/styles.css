@@ -64,16 +64,33 @@ nav .nav .form-control {
 }
 
 .welcome {
-        font-size: 10vmin;
+        
+        font-size: max(10vmin, 20px);
         text-shadow: 3px 3px 3px rgb(181, 179, 179);
         animation: welcome_move 1.5s -0.2s ease forwards;
 
 }
 
 .info{
-        font-size: 4vmin;
+        font-size: max(4vmin, 15px);
         text-shadow: 2px 2px 2px rgb(224, 223, 223);
         animation: welcome_move 1.5s ease forwards;
+}
+
+.About-me {
+        font-size: max(2.4vmin, 12px);
+        animation: welcome_move 1.5s ease forwards;
+}
+
+@keyframes wiggle
+{
+        0% { transform: translateX(0px); } 
+       
+        30% { transform: translateX(5px) translateY(20px); } 
+         
+        70% { transform: translateX(20px) translateY(-7px); }
+        
+        /*100% { transform: translateX(0%); }*/
 }
 
 
@@ -83,6 +100,18 @@ nav .nav .form-control {
         
         background-color: rgb(46, 46, 46);
         border-radius: 50% 0px 0px 50%;
+}
+
+.ball{
+        width: 15vmax;
+        height: 15vmax;
+        border-radius: 50%;
+        bottom: 5vh;
+        right: 17vw;
+        background-color: black;
+        content: normal;
+        position:absolute;
+        animation: wiggle 7s ease infinite;
 }
 
 .About-Me-card {
