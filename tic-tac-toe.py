@@ -1,3 +1,5 @@
+#Tic tac toe game with a basic UI
+
 winning_moves = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [1, 4, 7], [2, 5, 8], [3, 6, 9], [1, 5, 9], [3, 5, 7]]
 player1_moves = []
 player2_moves = []
@@ -36,6 +38,7 @@ while move < 9:
                 print("Player", str(1 + (move % 2)) + "'s", "move (Denoted by", ["O", "X"][move%2], ")")
                 square = int(input("Please type in a number between 1 and 9 (both inclusive): "))
         except:
+                #Error testing
                 print("Error: Please type in a valid input")
                 continue
 
@@ -44,6 +47,7 @@ while move < 9:
                 board[square-1] = ["O", "X"][move%2]
                 move += 1
         else:
+                #Error testing
                 print("Error: Choose a valid number")
                 continue
 
@@ -63,31 +67,3 @@ while move < 9:
               printBoard()
               print("Winner is Player", check)
               break
-        '''
-        if move % 2 == 0:
-            try:
-                print("Player 1's move (Denoted by 'O')")
-                square = int(input("Please type in a number between 1 and 9 (both inclusive): "))
-            except:
-                print("Error: Please type in a valid input")
-
-
-            if 1 <= square <= 9:
-                board[square-1] = "O"
-                move += 1
-            else:
-                print("Error: Choose a valid number")
-        else:
-            try:
-                print("Player 2's move (Denoted by 'X')")
-                square = int(input("Please type in a number between 1 and 9 (both inclusive): "))
-            except:
-                print("Error: Please type in a valid input")
-
-
-            if 1 <= square <= 9:
-                board[square-1] = "O"
-                move += 1
-            else:
-                print("Error: Choose a valid number")
-        '''
